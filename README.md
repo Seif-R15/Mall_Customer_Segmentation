@@ -1,5 +1,6 @@
 # Mall_Customer_Segmentation
 
+!(f9980f_9ec4f8a477cb430cba05dd3526a54b04~mv2.png)
 
 This hierarchical clustering approach can be useful for customer segmentation to better understand and predict customer behavior. The code in this repository provides an example data science workflow using R to cluster customer data.
 
