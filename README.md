@@ -3,20 +3,31 @@
 
 This hierarchical clustering approach can be useful for customer segmentation to better understand and predict customer behavior. The code in this repository provides an example data science workflow using R to cluster customer data.
 
-1- This repository contains code to perform hierarchical clustering on customer data. Specifically, it:
+This repository contains R code that performs hierarchical clustering on a dataset of mall customers based on their annual income and spending score. The code uses the hclust and clusplot functions to compute and visualize the clusters. The code also plots a dendrogram to help determine the optimal number of clusters.
 
-2- Loads the required R libraries for data manipulation (dplyr), clustering (cluster), and data visualization (factoextra)
+The dataset contains 200 observations of 5 variables:
 
-3- Imports the Mall_Customers.csv dataset which contains customer demographic information and spending habits. The code selects the annual income and spending score columns to use as clustering features.
+- CustomerID: A unique identifier for each customer
 
-4- Scales the features (annual income and spending score) using the scale() function to standardize the range of values. This is an important pre-processing step for the clustering algorithm.
+- Gender: The gender of the customer (Male or Female)
 
-5- Uses a dendrogram (a tree-based representation of a hierarchical clustering solution) to visualize and determine the optimal number of clusters. Based on the elbow of the dendrogram, 5 clusters are selected.
+- Age: The age of the customer
 
-7- Fits hierarchical clustering with the ward.D2 method and 5 clusters. Ward's method is used as it optimizes cluster membership by maximizing the between-cluster distances.
+- Annual Income (k$): The annual income of the customer in thousands of dollars
 
-8- Visualizes the 5 clusters using factoextra, plotting the clusters of customers on the scaled features of annual income and spending score. This provides an insightful view of how the clustering algorithm grouped the customers.
+- Spending Score (1-100): A score assigned by the mall based on the customer’s spending behavior
 
-9- The end result is a clean clustering of the customers into 5 distinct groups based on their demographic and spending attributes.
+The code can be run in any R environment that has the cluster package installed. The output is a two-dimensional plot that shows the clusters of customers and their characteristics.
+This GitHub repository contains R code that performs hierarchical clustering on a dataset of mall customers based on their annual income and spending score. This code is designed to help businesses segment customers into distinct groups based on their spending behavior and annual income, allowing them to target their marketing and sales efforts more effectively.
+
+1- The code first imports the dataset, which contains 200 observations of 5 variables including CustomerID, Gender, Age, Annual Income, and Spending Score. The code then uses the hclust and clusplot functions to compute and visualize the clusters of customers. 
+
+2- To determine the optimal number of clusters, the code uses a dendrogram to visualize the distance between each pair of customers. The resulting dendrogram is plotted to help determine the optimal number of clusters. 
+
+3- The code then fits hierarchical clustering to the dataset and assigns each customer to a cluster using the cutree function. Finally, the clusplot function is used to visualize the clusters of customers and their characteristics, including annual income and spending score.
+
+4- This code is designed to be run in any R environment that has the cluster package installed. The output is a two-dimensional plot that shows the clusters of customers and their characteristics, allowing businesses to gain insights into customer behavior and preferences. 
+
+Overall, this code provides a valuable tool for businesses looking to improve their marketing and sales strategies by segmenting customers and tailoring their approach to each group's unique characteristics.
 
 This hierarchical clustering approach can be useful for customer segmentation to better understand and predict customer behavior. The code in this repository provides an example data science workflow using R to cluster customer data. Please let me know if you have any questions or need any clarification!
